@@ -28,6 +28,10 @@ class Thermostat {
     }
     return this.temperature;
   }
+
+  isPowerSavingModeOn() {
+    return this.powerSavingMode === true;
+  }
   
   powerSavingModeOff() {
     return this.powerSavingMode = false;
