@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/thermostat_style.css"/>
     <title>Thermostat</title>
   </head>
   <body>
     <section>
-        <h1> Roury's Thermostat </h1>
-      <h2 id="temperature"></h2>
+        <h1> BADMAN THERMOSTAT </h1>
+    <div id="usageBar">
+      <h4 id="temperature"></h4>
+    </div>
       <p>
         <button id="temperature-up">+</button>
         <button id="temperature-down">-</button>
         <button id="temperature-reset">reset</button>
-        power saving mode is <span id="power-saving-status">on</span>
+        Power saving mode (PSM) is <span id="power-saving-status">on</span>
         <button id="powersaving-on">PSM on</button>
         <button id="powersaving-off">PSM off</button>
       </p>
     </section>
     <script src="src/thermostat.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="src/interface.js"></script>
   </body>
 </html>
