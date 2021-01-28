@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 h1 {
-	text-align: center;
+    text-align: center;
 }
 
 h4 {
@@ -9,18 +9,38 @@ h4 {
 }
 
 body {
-	background: #8abeb1;
+    background-color: #fdf6ec;
+    background-image: radial-gradient(#53504d66 0.8px, #fdf6ec 0.8px);
+    background-size: 16px 16px;
+    font-family: 'Montserrat', sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#current-city {
+    width: 75%;
+    border-radius: 5px;
+}
+
+.app-box {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgba(194, 194, 194, 0.55) , white);
+    border-radius: 10px;
+    max-width: 500px;
+    height: 200px;
+    box-shadow: 5px 7px #888888db;
 }
 
 .low-usage {
     width: 33.33%;
     height: 30px;
-    background-color: green;
+    background-color: rgb(23, 167, 23);
     border-radius: 15px;
     text-align: center;
     line-height: 30px;
@@ -49,8 +69,33 @@ body {
 
 #usageBar {
     width: 100%;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.548);
     border-radius: 15px;
+    height: fit-content;
 }
   
+.button {
+    border-radius: 10%;
+    background-color: rgb(115, 117, 117);
+    color: white;
+    height: 30px;
+}
 
+.update-button {
+    border-radius: 10%;
+    background-color: rgb(115, 117, 117);
+    color: white;
+    height: 23px;
+}
+
+.update-button:disabled {
+  border: 2px solid #999999;
+  background-color: #3f3f3f;
+  color: #999999;
+}
+
+.button:hover {
+    border: 2px solid white;
+    background-color: rgba(115, 117, 117, 0.612);
+    color: white;
+}

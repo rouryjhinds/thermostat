@@ -1,26 +1,77 @@
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <link rel="stylesheet" type="text/css" href="/stylesheets/thermostat_style.css"/>
+
     <title>Thermostat</title>
+
   </head>
+
   <body>
+
     <section>
-        <h1> BADMAN THERMOSTAT </h1>
+
+    
+
+    <h1> BADMAN THERMOSTAT </h1>
+
+    
+
+    <h3>Current temperature in <span id="temp-in-city">London</span>: <span id="current-temperature"></span></h3>
+
+    <form id="select-city" class="city-box">
+
+        <input id="current-city" type="text" placeholder="enter a city; eg Paris"></input>
+
+        <input type="submit" class="update-button" value="Update"></input>
+
+    </form>
+
+    
+
     <div id="usageBar">
-      <h4 id="temperature"></h4>
+
+      <h5 id="temperature"></h5>
+
     </div>
+
+    
+
+  <div class="app-box">      
+
       <p>
-        <button id="temperature-up">+</button>
-        <button id="temperature-down">-</button>
-        <button id="temperature-reset">reset</button>
-        Power saving mode (PSM) is <span id="power-saving-status">on</span>
-        <button id="powersaving-on">PSM on</button>
-        <button id="powersaving-off">PSM off</button>
+
+        <button id="temperature-up" class="button"> + </button>
+
+        <button id="temperature-down" class="button"> - </button>
+
+        <button id="temperature-reset" class="button"> reset </button>
+
+       <br></br>
+
       </p>
+
+        <button id="powersaving-on" class="button">PSM on</button>
+
+        <button id="powersaving-off" class="button">PSM off</button>
+
+        <p></p>
+
+        Power saving mode (PSM) is <span id="power-saving-status">on</span>
+
+  </div> 
+
     </section>
+
     <script src="src/thermostat.js"></script>
+
     <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
     <script src="src/interface.js"></script>
+
   </body>
+
 </html>
